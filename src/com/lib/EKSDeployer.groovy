@@ -46,5 +46,5 @@ def deployer(){
             sh "./terraform ${ACTION}  -var-file configurations/${ENVIR}/${ENVIR}.tfvars -auto-approve"
         }
     }
-}
+ }
 }
