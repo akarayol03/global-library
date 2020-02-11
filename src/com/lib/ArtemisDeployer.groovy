@@ -22,7 +22,7 @@ def deployer () {
 	stage("Stage1"){
 		timestamps {
 			ws {
-				checkout([$class: 'GitSCM', branches: [[name: '${Version}']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/fuchicorp/artemis.git']]])
+				checkout([$class: 'GitSCM', branches: [[name: '${Version}']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/akarayol03/Jenkins_pipelines.git']]])
 		}
 	}
 }
