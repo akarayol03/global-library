@@ -37,7 +37,7 @@ def deployer(){
     }
     stage("Set Backend"){
         ws ("tmp/"){
-            sh "bash  source setenv.sh configurations/${ENVIR}/${ENVIR}.tfvars"
+            sh "bash setenv.sh configurations/${ENVIR}/${ENVIR}.tfvars"
             sh "./terraform init"
         }
     }
